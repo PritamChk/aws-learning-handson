@@ -34,4 +34,17 @@ this repo is created store all learning and hands-on practice of aws EC2
 
 > Region Example :
 >
-> ![alt text](assets/image.png)
+> ![alt text](assets/assets/image.png)
+
+### How to create EC2 instancs?
+
+1. Go dashboard and search for EC2 --> launch instance.
+1. Page will look like below
+   - ![alt text](assets/image1.png)
+   - ![alt text](assets/image-1.png)
+1. Create key-pair which will be required to connect to VM through putty/winscp/terminal.
+   - ![alt text](assets/image-2.png)
+1. To allow all traffic from internet to access the public ip of EC2 instance tick✅ the below check box :
+   - ![alt text](assets/image-3.png)
+1. Give info and start instance , to spin up the VM.
+   - ![alt text](assets/image-4.png)
