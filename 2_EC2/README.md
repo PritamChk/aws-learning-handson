@@ -29,3 +29,9 @@ this repo is created store all learning and hands-on practice of aws EC2
 > 1.  Memory Optimized
 > 1.  Storage Optimized
 > 1.  Accelerated Optimized
+
+### Q3. Region & Availability Zone ?
+
+> Region Example :
+>
+> ![alt text](assets\image.png)
