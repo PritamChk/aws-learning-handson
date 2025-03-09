@@ -18,9 +18,9 @@
 
 > **TYPE: free**
 
-![#image](image.png)
-![#image-1 not](image-1.png)
-![alt text](image-2.png)
+![#image](assets/image.png)
+![#image-1 not](assets/image-1.png)
+![alt text](assets/image-2.png)
 
 ---
 
@@ -40,10 +40,10 @@
 
 > from IAM we can create group
 
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
 1. Created one group called **G1_IAMAccess** where user can have only read access to
 1. Now logged in with user one and tried to remove the `user1` from group | result below (expected):
-   - > ![alt text](image-4.png)
+   - > ![alt text](assets/image-4.png)
 1. But as `user1` has read access - it can only view.
-   - ![alt text](image-5.png)
+   - ![alt text](assets/image-5.png)
