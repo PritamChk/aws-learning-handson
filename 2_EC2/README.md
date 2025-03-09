@@ -48,3 +48,17 @@ this repo is created store all learning and hands-on practice of aws EC2
    - ![alt text](assets/image-3.png)
 1. Give info and start instance , to spin up the VM.
    - ![alt text](assets/image-4.png)
+1. Success.
+
+   - ![alt text](assets/image-success.png)
+   - ![alt text](assets/image-runnig.png)
+   - ![alt text](assets/image-pub-ip-dns.png)
+
+1. Now connect to the instance / VM from terminal
+   - > ```
+     > PRITAM@Pritam-Yoga-Slim-7 MINGW64 ~/Desktop/DOCKER/HANDS_ON/AWS_Learning/aws-learning-handson/2_EC2 (main)
+     > $ ssh -i aws_1st_ec2_vm.pem ubuntu@13.201.20.13
+     >
+     >
+     > 
+   - ![alt text](assets/image-tty.png)
