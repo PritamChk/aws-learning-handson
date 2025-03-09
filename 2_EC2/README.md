@@ -34,4 +34,4 @@ this repo is created store all learning and hands-on practice of aws EC2
 
 > Region Example :
 >
-> ![alt text](assets\image.png)
+> ![alt text](assets/image.png)
