@@ -55,10 +55,31 @@ this repo is created store all learning and hands-on practice of aws EC2
    - ![alt text](assets/image-pub-ip-dns.png)
 
 1. Now connect to the instance / VM from terminal
+
    - > ```
      > PRITAM@Pritam-Yoga-Slim-7 MINGW64 ~/Desktop/DOCKER/HANDS_ON/AWS_Learning/aws-learning-handson/2_EC2 (main)
      > $ ssh -i aws_1st_ec2_vm.pem ubuntu@13.201.20.13
      >
      >
+     >
+     >
+     >
      > 
    - ![alt text](assets/image-tty.png)
+
+1. Install gitea in aws ec2 instance.
+   - ![alt text](gitea/image.png)
+   - ![alt text](gitea/image-1.png)
+1. to install connect to aws ec2 vm through terminal and then follow usual gitea installation steps for a binary.
+
+```sh
+wget https://dl.gitea.com/gitea/1.23.5/gitea-1.23.5-linux-amd64
+
+chmod 755
+chmod 755 gitea-1.23.5-linux-amd64
+nohup ./gitea-1.23.5-linux-amd64 web -p 80 -c ./app.ini > startLog.out &
+```
+
+1. change inbound traffic rule in security to allow all traffic
+   - ![alt text](gitea/image-2.png)
+   - ![alt text](gitea/image-3.png)
