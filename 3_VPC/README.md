@@ -35,3 +35,4 @@
 > So once PoC done , do disassociate the Ip from network and then release it .
 >
 > - ![alt text](imgs/image-t1.png)
+> - ![alt text](imgs/db_image.png)
