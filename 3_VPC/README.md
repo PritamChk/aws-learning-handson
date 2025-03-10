@@ -27,3 +27,11 @@
       - ![alt text](imgs/image-9.png)
       - ![alt text](imgs/image-10.png)
    1. So over all idea got for NACL and SG.
+
+> [!WARNING]
+>
+> While creating VPC - I have not associated any public ip by default option , so later on I have to create Elastic IP for it and Associate with the network - **which is chargeable** .
+>
+> So once PoC done , do disassociate the Ip from network and then release it .
+>
+> - ![alt text](imgs/image-t1.png)
