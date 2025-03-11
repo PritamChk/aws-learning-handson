@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(75, 157, 239);
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: white;
+  color: rgb(75, 157, 239);
+  text-decoration: none;
+  border: 2px solid rgb(75, 157, 239);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+  color: white;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: rgb(47, 150, 254);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(75, 157, 239);
+  color: white;
+  margin-top: 20px;
+}
+
+.progress-container {
+  width: 100%;
+  max-width: 300px;
+  height: 10px;
+  background-color: #e0f2ff;
+  border-radius: 5px;
+  margin: 15px auto;
+  overflow: hidden;
+  display: none;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: rgb(1, 85, 149);
+  transition: width 0.2s ease-in-out;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#skills i {
+  color: rgb(75, 157, 239);
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#skills table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills th,
+#skills td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#skills th {
+  background-color: rgb(75, 157, 239);
+  color: white;
+}
+
+#skills td i {
+  color: rgb(75, 157, 239);
+  margin-right: 5px;
+}
