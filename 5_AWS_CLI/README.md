@@ -61,3 +61,11 @@
 # trying to start the classroom backend
 
 ![alt text](imgs/image-8.png)
+
+# USER CREATION PRACTICE
+
+```sh
+aws iam create-user --user-name developer3
+aws iam create-login-profile --user-name developer3 --password-reset-required --password "ChangePwd@123"
+aws iam attach-user-policy --user-name developer3 --policy-arn "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess" --policy-arn "arn:aws:iam::aws:policy/IAMUserChangePassword"
+```
