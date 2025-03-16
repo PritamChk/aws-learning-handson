@@ -1,0 +1,25 @@
+version: 0.2
+
+env:
+  parameter-store:
+    DOCKER_USER: /docker/username/pritam
+    DOCKER_PASSWD: /docker/password/pritam
+    IMAGE_NAME: /fastapi/app/img_name
+  variables:
+    none: none
+phases:
+  pre_build:
+    commands:
+      - echo "hello $(hostname -i)"
+  build:
+    commands:
+      - echo "Building Docker Image for fastapi APP "
+      - ls -lrt
+      - export TIMESTAMP=$(date +%y%m%d_%H%M%S)
+      - echo "${DOCKER_PASSWD}" | docker login --password-stdin -u ${DOCKER_USER}
+      - echo "${DOCKER_USER}/${IMAGE_NAME}:v${TIMESTAMP}"
+      - docker build -t "${DOCKER_USER}/${IMAGE_NAME}:v${TIMESTAMP}" .
+      - docker push "${DOCKER_USER}/${IMAGE_NAME}:v${TIMESTAMP}"
+  post_build:
+    commands:
+      - echo "Build Completed Successfull| please check by | docker pull ${DOCKER_USER}/${IMAGE_NAME}:v${TIMESTAMP}"
